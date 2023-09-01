@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
       })
       .then((data) => {
         for (let item of data) {
-          if (item.color === 31) {
+          if (item.color === 31 && item.available === true) {
             client.messages
               .create({
                 body: 'MAVİ RENK AÇILDI',
