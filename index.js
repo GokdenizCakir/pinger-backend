@@ -33,6 +33,7 @@ app.get('/', async (req, res) => {
               .catch((err) => console.log(err));
           }
         }
+        res.status(200).json({ message: 'success' });
       });
   } catch (err) {
     console.log(err);
