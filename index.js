@@ -37,6 +37,6 @@ app.get('/ping', (req, res) => {
   res.status(200).json({message:'pong'});
 });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Server listening on port 3000');
 });
